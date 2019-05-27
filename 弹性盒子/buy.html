@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			html,
+			body {
+				width: 100%;
+			}
+
+			html {
+				font-size: 50px;
+			}
+
+			li {
+				list-style: none;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.wrap {
+				width: 90%;
+				padding: 0 5%;
+			}
+
+			.wrap .top>a>img {
+				float: left;
+			}
+
+			.wrap .top {
+				padding-bottom: 0.4rem;
+			}
+
+			.wrap .top>p {
+				font-size: 0.36rem;
+				text-align: center;
+				font-weight: bold;
+			}
+
+			.wrap .wrap-gift ul {
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.wrap .wrap-gift ul li {
+				float: left;
+				font-size: 0.28rem;
+				margin: 0 0;
+				color: #656565;
+			}
+
+			.wrap .wrap-gift ul li:last-child {
+				float: right;
+				font-weight: 100;
+			}
+
+			.wrap .wrap-gift>ul>li>span {
+				display: inline-block;
+				width: 0.28rem;
+				height: 0.28rem;
+				background: url(img/cin_lihe.png) no-repeat center/cover;
+				margin-right: 20px;
+			}
+
+			.wrap .wrap-gift .wrap-gift-img {
+				width: 100%;
+				text-align: center;
+				margin-top: 38px;
+			}
+
+			.wrap .wrap-gift .wrap-gift-img img {
+				width: 30%;
+			}
+
+			.wrap .wrap-gift .wrap-gift-ref {
+				width: 100%;
+				text-align: center;
+			}
+
+			.wrap .wrap-gift .wrap-gift-ref img {
+				width: 10%;
+			}
+
+			.wrap-gift-he {
+				font-size: 0.28rem;
+				color: #656565;
+			}
+
+			.wrap-gift-he span {
+				display: inline-block;
+				width: 0.28rem;
+				height: 0.28rem;
+				background: url(img/cin_lihe.png) no-repeat center/cover;
+				margin: 55px 20px 0 0;
+			}
+
+			.wrap-gift-count span {
+				display: inline-block;
+				width: 0.28rem;
+				height: 0.28rem;
+				background-color: #008000;
+				color: white;
+				text-align: center;
+				line-height: 0.28rem;
+				font-size: 0.18rem;
+				border-radius: 50%;
+				margin-left: 10px;
+			}
+
+			.wrap-gift-count {
+				margin-top: 30px;
+			}
+
+			.wrap-gift-count>ul>li {
+				color: #878787;
+				font-size: 0.28rem;
+			}
+
+			.wrap-price>ul {
+				overflow: hidden;
+			}
+
+			.wrap-price>ul>li {
+				border: 1px solid #CCCCCC;
+				float: left;
+				width: 45%;
+				border-radius: 5%;
+				margin-top: 30px;
+				box-shadow: 0 0 10px #C0C0C0;
+			}
+
+			.wrap-price>ul>li .wrap-price-con {
+				position: relative;
+				border-bottom: 1px solid #CCCCCC;
+			}
+
+			.wrap-price>ul>li .wrap-price-con img {
+				position: absolute;
+				top: 0;
+				right: 6%;
+			}
+
+			.wrap-price>ul>li .wrap-price-con p {
+				margin-left: 6%;
+				padding-bottom: 10px;
+			}
+
+			.wrap-price>ul>li .wrap-price-con p:first-child {
+				font-size: 0.3rem;
+				color: #bcbcbc;
+				margin-top: 8%;
+			}
+
+			.wrap-price>ul>li:nth-child(2) .wrap-price-con p:first-child {
+				color: #c9b371;
+			}
+
+			.wrap-price>ul>li:nth-child(3) .wrap-price-con p:first-child {
+				color: #d4daec;
+			}
+
+			.wrap-price>ul>li:nth-child(4) .wrap-price-con p:first-child {
+				color: #ffde27;
+			}
+
+			.wrap-price>ul>li:nth-child(5) .wrap-price-con p:first-child {
+				color: #79e7f5;
+			}
+
+			.wrap-price>ul>li:nth-child(6) .wrap-price-con p:first-child {
+				color: #5c4cf1;
+			}
+
+			.wrap-price>ul>li:nth-child(7) .wrap-price-con p:first-child {
+				color: #c44cf1;
+			}
+
+			.wrap-price>ul>li:nth-child(8) .wrap-price-con p:first-child {
+				color: #f14ce3;
+			}
+
+			.wrap-price>ul>li .wrap-price-con p:nth-child(2) {
+				font-size: 0.48rem;
+				color: #000000;
+			}
+
+			.wrap-price>ul>li .wrap-price-con p:nth-child(2):after {
+				content: "元";
+				font-size: 0.24rem;
+			}
+
+			.wrap-price>ul>li .wrap-price-con p:nth-child(3) {
+				font-size: 0.2rem;
+				color: #e1e1e1;
+				padding-bottom: 20px;
+			}
+
+			.wrap-price .wrap-price-sym {
+				height: 0.9rem;
+				text-align: center;
+				font-size: 0.24rem;
+				line-height: 0.9rem;
+				font-weight: 700;
+				color: #656565;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+
+			.wrap-price>ul>li:nth-child(2n) {
+				margin-left: 6%;
+			}
+
+			.wrap-send {
+				font-size: 0.22rem;
+				color: #8f8f8f;
+				text-align: center;
+				margin-top: 6%;
+			}
+
+			.wrap-buy {
+				width: 100%;
+				padding-top: 4%;
+				padding-bottom: 4%;
+				margin-top: 4%;
+				border-top: 1px solid #CCCCCC;
+			}
+
+			.wrap-buy>ul {
+				overflow: hidden;
+				width: 70%;
+				margin: auto;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.wrap-buy>ul>li p:first-child {
+				font-size: 0.22rem;
+				color: #878787;
+				padding-left: 10px;
+			}
+
+			.wrap-buy>ul>li p:last-child {
+				font-size: 0.42rem;
+				color: #000000;
+				font-weight: bold;
+			}
+
+			.wrap-buy>ul>li b {
+				color: white;
+				background-color: #008000;
+				font-size: 0.3rem;
+				line-height: 0.8rem;
+				display: block;
+				width: 1.5rem;
+				text-align: center;
+				border-radius: 10%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top">
+				<a href="#" onClick="javascript :history.back(-1);"><img src="img/左箭头.png"></a>
+				<p>购买礼盒</p>
+			</div>
+			<div class="wrap-gift">
+				<ul>
+					<li><span></span>礼盒包装</li>
+					<li>赠礼须知</li>
+				</ul>
+				<div class="wrap-gift-img">
+					<img src="img/礼物.png">
+				</div>
+				<div class="wrap-gift-ref">
+					<img src="img/icon_shuaxin.png">
+				</div>
+				<div class="wrap-gift-he">
+					<span></span>盒内礼品
+				</div>
+				<div class="wrap-gift-count">
+					<ul>
+						<li>已选数量：9</li>
+						<li>幸运礼品：iphone X<span>1</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap-price">
+				<ul>
+					<li>
+						<div class="wrap-price-con">
+							<p>1级品质</p>
+							<p>18</p>
+							<p>(价值10-30元)</p>
+							<img src="img/icon_vip_1.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img src="img/icon_+.png">
+						</div>
+					</li>
+					<li>
+						<div class="wrap-price-con">
+							<p>2级品质</p>
+							<p>38</p>
+							<p>(价值30-40元)</p>
+							<img src="img/icon_vip_2.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img src="img/icon_+.png">
+						</div>
+					</li>
+					<li>
+						<div class="wrap-price-con">
+							<p>3级品质</p>
+							<p>68</p>
+							<p>(价值40-80元)</p>
+							<img src="img/icon_vip_3.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img src="img/icon_+.png">
+						</div>
+					</li>
+					<li>
+						<div class="wrap-price-con">
+							<p>4级品质</p>
+							<p id="price">98</p>
+							<p>(价值80-120元)</p>
+							<img src="img/icon_vip_4.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img id="red" onclick="Reduce()" src="img/icon_-.png">
+							<p id="demo">2</p>
+							<img onclick="Add()" src="img/icon_+.png">
+						</div>
+					</li>
+					<li>
+						<div class="wrap-price-con">
+							<p>5级品质</p>
+							<p>128</p>
+							<p>(价值380-600元)</p>
+							<img src="img/icon_vip_7.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img src="img/icon_+.png">
+						</div>
+					</li>
+					<li>
+						<div class="wrap-price-con">
+							<p>6级品质</p>
+							<p>268</p>
+							<p>(价值580-1000元)</p>
+							<img src="img/icon_vip_8.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img src="img/icon_+.png">
+						</div>
+					</li>
+					<li>
+						<div class="wrap-price-con">
+							<p>7级品质</p>
+							<p>388</p>
+							<p>(价值990-1500元)</p>
+							<img src="img/icon_vip_9.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img src="img/icon_+.png">
+						</div>
+					</li>
+					<li>
+						<div class="wrap-price-con">
+							<p>8级品质</p>
+							<p>2018</p>
+							<p>(价值1999-9999元)</p>
+							<img src="img/icon_vip_10.png">
+						</div>
+						<div class="wrap-price-sym">
+							<img src="img/icon_+.png">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="wrap-send">
+				*暂不支持的收货地区：新疆、西藏、青海、港澳台
+			</div>
+
+		</div>
+		<div class="wrap-buy">
+			<ul>
+				<li>
+					<p>共9件商品</p>
+					<p>￥ <span id="pricehtml">0.00</span></p>
+				</li>
+				<li>
+					<b><a href="buyv.html">购买</a></b>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var add = new Object();
+			var num = new Object();
+			num.count = document.getElementById("pricehtml").innerHTML;
+			add.count = document.getElementById("demo").innerHTML;
+			add.plus = function() {
+				this.count++;
+			}
+			add.reduce = function(){
+				this.count--;
+			}
+
+			function Add() {
+				add.plus();
+				if(add.count > 0){
+				document.getElementById("demo").style.display='block';
+				document.getElementById("red").style.display='block';
+				}
+				document.getElementById("demo").innerHTML = add.count;
+				num.count = add.count * document.getElementById("price").innerHTML;
+			    document.getElementById("pricehtml").innerHTML = num.count;
+			}
+			function Reduce() {
+				add.reduce();
+				document.getElementById("demo").innerHTML = add.count;
+				document.getElementById("demo").innerHTML = add.count;
+				num.count = add.count * document.getElementById("price").innerHTML;
+				document.getElementById("pricehtml").innerHTML = num.count;
+			    if(add.count==0){
+				document.getElementById("demo").style.display='none';
+				document.getElementById("red").style.display='none';
+			}
+			}
+			
+		</script>
+	</body>
+</html>

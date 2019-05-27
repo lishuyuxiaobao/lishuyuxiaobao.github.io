@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			html,body{
+				width: 100%;
+			}
+			html{
+				font-size: 50px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.wrap{
+				width: 90%;
+				padding: 0 5%;
+			}
+			.wrap .top>a>img{
+				float: left;
+			}
+			.wrap .top{
+				padding-bottom: 0.4rem;
+			}
+			.wrap .top>p{
+				font-size: 0.36rem;
+				text-align: center;
+				font-weight: bold;
+			}
+			.wrap-con{
+				width: 100%;
+				margin-top: 0.2rem;
+				border: 1px solid #CCCCCC;
+				border-radius: 0.2rem;
+			}
+			.wrap-con .wrap-con-top{
+				/* width: 100%; */
+				text-align: center;
+				padding-top: 0.5rem;
+			}
+			.wrap-con .wrap-con-top img{
+				width: 10%;
+			}
+			.wrap-con .wrap-con-top p:nth-of-type(1){
+				font-size: 0.3rem;
+				padding-bottom: 0.2rem;
+				padding-top: 0.1rem;
+			}
+			.wrap-con .wrap-con-top p:last-child{
+				font-size: 0.6rem;
+			}
+			.wrap-con-bot ul{
+				padding-top: 0.2rem;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+			}
+			.wrap-con-bot ul li p:first-child{
+				font-size: 0.36rem;
+				color: #848484;
+				padding-bottom: 0.1rem;
+			}
+			.wrap-con-bot ul li p:last-child{
+				font-size: 0.24rem;
+				color: #848484;
+				padding-bottom: 0.3rem;
+			}
+			.wrap-dis ul li{
+				width: 88%;
+				display: flex;
+				flex-wrap: wrap;
+				border: 1px solid #CCCCCC;
+				border-radius: 0.1rem;
+				justify-content: initial;
+				padding: 0.4rem;
+				margin-top: 0.2rem;
+			}
+			.wrap-dis ul li p{
+				width: 50%;	
+			}
+			.wrap-dis ul li p:nth-of-type(2n){
+					text-align: right;
+					padding-top: 0.2rem;
+			}
+			.wrap-dis ul li p:nth-of-type(1){
+				font-size: 0.3rem;
+				font-weight: bold;
+			}
+			.wrap-dis ul li p:nth-of-type(2){
+				font-size: 0.24rem;
+				color: #f7be11;
+			}
+			.wrap-dis ul li p:nth-of-type(2) a{
+				font-size: 0.24rem;
+				color: #f7be11;
+			}
+			.wrap-dis ul li p:nth-of-type(2):after{
+				content: " (0/1)";
+				color: #333333;
+			}
+			.wrap-dis ul li p:nth-of-type(3){
+				font-size: 0.42rem;
+				padding-top: 0.1rem;
+				font-weight: bold;
+			}
+			.wrap-dis ul li p:nth-of-type(4){
+				font-size: 0.24rem;
+				padding-top: 0.3rem;
+			}
+			.wrap-dis ul li:nth-of-type(2) p:nth-of-type(2):after{
+				content: " (32/32)";
+				color: #333333;
+			}
+			.wrap-dis ul li:nth-of-type(3) p:nth-of-type(2):after{
+				content: " (32/32)";
+				color: #333333;
+			}
+			.wrap-dis ul li:nth-of-type(2) p:nth-of-type(2) a{
+				color: #87cb6d;
+			}
+			.wrap-dis ul li:nth-of-type(3) p:nth-of-type(2) a{
+				color: #87cb6d;
+			}
+			.footer{
+				
+				width: 100%;
+				text-align: center;
+				padding: 0.8rem 0 0 0;
+			}
+			.footer>a{
+				color: #abb5ca;
+				font-size: 0.26rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top"> 
+			    <a href="#" onClick="javascript :history.back(-1);"><img src="img/左箭头.png" ></a>
+				<p>我赠送的</p>
+			</div>
+			<div class="wrap-con">
+				<div class="wrap-con-top">
+					<img src="img/dd.png" >
+					<p>送礼总价值(元)</p>
+					<p>950</p>
+				</div>
+				<div class="wrap-con-bot">
+					<ul>
+						<li>
+							<p>1000</p>
+							<p>赠送数量(个)</p>
+						</li>
+						<li>
+							<p>15935</p>
+							<p>购买费用(元)</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap-dis">
+				<ul>
+					<li>
+						<p>女神专属礼盒</p>
+						<p><a href="i-get-yes.html">可领取</a></p>
+						<p>￥999</p>
+						<p>收件人：拉布丶</p>
+					</li>
+					<li>
+						<p>女神专属礼盒</p>
+						<p><a href="i-get-no.html">可领取</a></p>
+						<p>￥666</p>
+						<p>收件人：拉布丶等32人</p>
+					</li>
+					<li>
+						<p>女神专属礼盒</p>
+						<p><a href="i-get-no.html">可领取</a></p>
+						<p>￥222</p>
+						<p>收件人：拉布丶等32人</p>
+					</li>
+				
+				</ul>
+			</div>
+			<div class="footer">
+				<a href="use-method.html">联系客服</a>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			html,body{
+				width: 100%;
+			}
+			html{
+				font-size: 50px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.wrap{
+				width: 90%;
+				padding: 0 5%;
+			}
+			.wrap .top>a>img{
+				float: left;
+			}
+			.wrap .top{
+				padding-bottom: 0.4rem;
+			}
+			.wrap .top>p{
+				font-size: 0.36rem;
+				text-align: center;
+				font-weight: bold;
+			}
+			.wrap-con{
+				width: 100%;
+				text-align: center;
+				margin-top: 10%;
+				position: relative;
+			}
+			.wrap-con>img{
+				width: 30%;
+			}
+			.wrap-con .wrap-con-ready{
+				background-color: red;
+				width: 2.2rem;
+				height: 2.2rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 8%;
+				margin: auto;
+				border-radius: 50%;
+				background: rgba(0,0,0,0.2);
+			}
+			.wrap-con .wrap-con-ready img{
+				width: 90%;
+				display: inline-block;
+				margin-top: 40%;
+			}
+			.wrap-con p{
+				font-size:0.3rem;
+			}
+			.wrap-con-text ul li{
+				font-size: 0.28rem;
+				color: #656565;
+			}
+			.wrap-con-text{
+				width: 100%;
+				border-bottom: 1px solid #CCCCCC;
+				padding-bottom: 0.2rem;
+			}
+			.wrap-con-text ul{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				padding-top: 0.5rem;
+				flex-wrap: wrap;
+			}
+			.wrap-con-text ul li{
+				width: 50%;
+				height: 0.6rem;
+			}
+			.wrap-con-message{
+					overflow:hidden;
+					width: 100%;
+			}
+			.wrap .wrap-con-message>p{
+				float: left;
+				padding-top: 0.4rem;
+				font-size: 0.24rem;
+				color: #abb5ca;
+			}
+			.wrap-con-message .wrap-con-message-con{
+				width: 100%;
+				background-color: #f8f8f8;
+				height: 3rem;
+				display: inline-block;
+				color: #aeaeae;
+				font-size: 0.3rem;
+				padding: 0.4rem 0.2rem;
+				position: relative;				
+			}  
+			.wrap-con-message .wrap-con-message-con span{
+				position: absolute;
+				display: block;
+				right: 1rem;
+				bottom: 0.2rem;
+			}
+			.wrap-con-message a{
+				font-size: 0.36rem;
+				background-color: #9de49c;
+				color: white;
+				width: 90%;
+				display: block;
+				text-align: center;
+				padding: 0.3rem;
+				margin:0.6rem 0;
+				border-radius: 0.2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top"> 
+			    <a href="#" onClick="javascript :history.back(-1);"><img src="img/左箭头.png" ></a>
+				<p>购买礼盒</p>
+			</div>
+			<div class="wrap-con">
+				<img src="img/矢量智能对象.png" >
+				<div class="wrap-con-ready">
+					<img src="img/pic_wanbi.png" >
+				</div>
+			   	<p>年会系列礼盒</p>
+				<div class="wrap-con-text" >
+					<ul> 
+						<li>礼盒价格</li>
+						<li>198元</li>
+						<li>盒内礼品</li>
+						<li>52件</li>
+						<li>礼品总价值</li>
+						<li>3000-5000元</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap-con-message">
+				<p>你的赠言</p>
+				<div class="wrap-con-message-con">
+					<textarea cols="40" rows="7" style="border: 0;background-color: #f8f8f8;" placeholder="美女，晚上一起约饭么？"></textarea>
+					<span>10/30</span>
+				</div>
+				<a href="mygift.html">赠送</a>
+			</div>
+		</div>
+	</body>
+</html>

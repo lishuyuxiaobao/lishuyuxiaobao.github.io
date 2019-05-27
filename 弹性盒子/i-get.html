@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			html,body{
+				width: 100%;
+			}
+			html{
+				font-size: 50px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.wrap{
+				width: 90%;
+				padding: 0 5%;
+			}
+			.wrap .top>a>img{
+				float: left;
+			}
+			.wrap .top{
+				padding-bottom: 0.4rem;
+			}
+			.wrap .top>p{
+				font-size: 0.36rem;
+				text-align: center;
+				font-weight: bold;
+			}
+			.wrap-con{
+				width: 100%;
+				margin: 0.2rem 0;
+				border: 1px solid #CCCCCC;
+				border-radius: 0.2rem;
+			}
+			.wrap-con .wrap-con-top{
+				/* width: 100%; */
+				text-align: center;
+				padding-top: 0.5rem;
+			}
+			.wrap-con .wrap-con-top img{
+				width: 10%;
+			}
+			.wrap-con .wrap-con-top p:nth-of-type(1){
+				font-size: 0.3rem;
+				padding-bottom: 0.2rem;
+				padding-top: 0.1rem;
+			}
+			.wrap-con .wrap-con-top p:nth-of-type(2){
+				font-size: 0.6rem;
+				padding-bottom: 0.2rem;
+			}
+			.wrap-con .wrap-con-top p:nth-of-type(3){
+				font-size: 0.3rem;
+				padding-bottom: 0.6rem;
+			}
+			.wrap-con .wrap-con-top p:nth-of-type(3) a{
+				color: #b9e1aa;
+			}
+			.wrap-dis ul li{
+				width: 88%;
+				display: flex;
+				flex-wrap: wrap;
+				border: 1px solid #CCCCCC;
+				border-radius: 0.1rem;
+				justify-content: initial;
+				padding: 0.4rem;
+				margin-top: 0.2rem;
+			}
+			.wrap-dis ul li p{
+				width: 50%;	
+			}
+			.wrap-dis ul li p:nth-of-type(2n){
+					text-align: right;
+					padding-top: 0.2rem;
+			}
+			.wrap-dis ul li p:nth-of-type(1){
+				font-size: 0.3rem;
+				font-weight: bold;
+			}
+			.wrap-dis ul li p:nth-of-type(2){
+				font-size: 0.24rem;
+				color: #f7be11;
+			}
+			.wrap-dis ul li p:nth-of-type(3){
+				font-size: 0.24rem;
+				padding-top: 0.1rem;
+				display: flex;
+				align-items: center;
+
+			}
+			.wrap-dis ul li p img{
+				width: 0.6rem;
+			}
+			.wrap-dis ul li p:nth-of-type(4){
+				font-size: 0.24rem;
+				padding-top: 0.3rem;
+			}
+			.wrap-dis ul li:nth-of-type(2) p:nth-of-type(5){
+				font-size: 0.24rem;
+				padding-top: 0.3rem;
+				text-align: right;
+			}
+			.wrap-dis ul li:nth-of-type(2) p:nth-of-type(4){
+				font-size: 0.24rem;
+				padding-top: 0.1rem;
+				display: flex;
+				align-items: center;
+
+			}
+			.wrap-dis ul li:nth-of-type(2) p:nth-of-type(2){
+				color: #f7be11;
+			}
+			.wrap-dis ul li:nth-of-type(3) p:nth-of-type(2){
+				color: #87cb6d;
+			}
+			.wrap-dis ul li:nth-of-type(2) p:nth-of-type(3){
+				width: 100%;
+				color: #f7be11;
+				font-size: 0.24rem;
+				margin: 0;
+				display: inline-block;
+				text-align: right;
+			}
+			.footer{		
+				width: 100%;
+				text-align: center;
+				padding: 0.8rem 0 0 0;
+			}
+			.footer>a{
+				color: #abb5ca;
+				font-size: 0.26rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top"> 
+			    <a href="#" onClick="javascript :history.back(-1);"><img src="img/左箭头.png" ></a>
+				<p>我收到的</p>
+			</div>
+			<div class="wrap-con">
+				<div class="wrap-con-top">
+					<a href="get-chose.html"><img src="img/cin_lihe.png" ></a>
+					<p>收礼总价值</p>
+					<p>10001</p>
+					<p>收到礼盒数量<a>100</a>个</p>
+				</div>
+			</div>
+			<div class="wrap-dis">
+				<ul>
+					<li>
+						<p>男神专属礼盒</p>
+						<p>待发货</p>
+						<p><img src="img/牙刷.png" >小米电动牙刷1支</p>
+						<p>收件人：拉布丶</p>
+					</li>
+					<li>
+						<p>男神专属礼盒</p>
+						<p>待发货</p>
+						<p>(未填地址)</p>
+						<p><img src="img/牙刷.png" >小米电动牙刷1支</p>
+						<p>收件人：拉布丶</p>
+					</li>
+					<li>
+						<p>男神专属礼盒</p>
+						<p>已发货</p>
+						<p><img src="img/牙刷.png" >小米电动牙刷1支</p>
+						<p>收件人：拉布丶</p>
+					</li>
+				
+				</ul>
+			</div>
+			<div class="footer">
+				<a href="use-method.html">联系客服</a>
+			</div>
+		</div>
+	</body>
+</html>

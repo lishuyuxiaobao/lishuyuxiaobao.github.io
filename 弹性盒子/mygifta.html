@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			html,body{
+				width: 100%;
+			}
+			html{
+				font-size: 50px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.wrap{
+				width: 100%;
+				/* padding: 0 5%; */
+			}
+			.wrap .top>a>img{
+				float: left;
+			}
+			.wrap .top{
+				padding-bottom: 0.4rem;
+			}
+			.wrap .top>p{
+				font-size: 0.3rem;
+				text-align: center;
+				font-weight: bold;
+			}
+			.wrap-con{
+				width: 100%;
+				text-align: center;
+				margin-top: 10%;
+				position: relative;
+			}
+			.wrap-con>img{
+				width: 85%;
+			}
+			.wrap-con p{
+				font-size:0.3rem;
+			}
+			.wrap-con-message{
+				padding: 0.4rem 0;
+			}
+			.wrap-con-message p{
+					color: #b2b2b2;
+					font-size: 0.28rem;
+			}	
+			.wrap-con-message>p:nth-of-type(1){
+				width: 92%;
+				font-size:0.24rem;
+				color: #d3d3d3;
+				padding: 0.1rem 0 0.1rem 8%;
+				background-color: #f8f8f8;
+			}
+			.wrap-con-message>p:nth-of-type(1) span{
+				float: right;
+				padding-right: 16%;
+				color: #d3d3d3;
+			}
+			.wrap-con-message>p:nth-of-type(2){
+				font-size: 0.22rem;
+				color: #878787;
+				text-align: center;
+				padding-top: 0.5rem;
+				padding-bottom: 0.1rem;
+			}
+			.wrap-con-message a{
+				font-size: 0.36rem;
+				background-color: #09BB07;
+				color: white;
+				width: 80%;
+				display: block;
+				text-align: center;
+				padding: 0.3rem;
+				border-radius: 0.2rem;
+				margin: auto;
+				/* margin-top: 2rem; */
+			}
+			.wrap-con-message-text{
+				padding: 0 8%;
+			}
+			.wrap-con-message-text>p{
+				padding: 0.2rem 0;
+			}
+			.wrap-con-message-text>p span{
+				float: right;
+				width: 60%;
+				text-align: right;
+			}
+			.wrap-con-message-text>p:nth-of-type(3) span{
+				float: right;
+				width: 60%;
+				text-align: left;
+			}
+			#c2>p:nth-of-type(3) span{
+				text-align: right;
+			}
+			.footer{
+
+				width: 100%;
+				text-align: center;
+				padding: 0 0 0.2rem 0;
+			}
+			.footer a{
+				color: #abb5ca;
+				font-size: 0.26rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top"> 
+			<a href="#" onClick="javascript :history.back(-1);"><img src="img/左箭头.png" ></a>
+				<p>我的礼品</p>
+			</div>
+			<div class="wrap-con">
+				<img src="img/我的礼物.png" >
+			   	<p>获得小米电动牙刷*1</p>
+			</div>
+			<div class="wrap-con-message">
+				<p>收货信息<span></span></p>
+				<div class="wrap-con-message-text">
+					<p>联系人<span>拉布丶</span></p>
+					<p>手机号<span>15938833799</span></p>
+					<p>收货地址<span>天津市 天津 河西区 新建村二期低层 12号楼 一单元 1101</span></p>
+				</div>
+			</div>
+			<div class="wrap-con-message">
+				<p>物流信息<span></span></p>
+				<div class="wrap-con-message-text" id="c2">
+					<p>发货状态<span>已发货</span></p>
+					<p>物流公司<span>顺丰快递</span></p>
+					<p>运单单号<span>1231456892356</span></p>
+				</div>
+				<a href="i-send.html">完成</a>
+			</div>
+			<div class="footer">
+				<a href="use-method.html">联系客服</a>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			html,body{
+				width: 100%;
+			}
+			html{
+				font-size:50px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.wrap{
+				width: 90%;
+				padding: 0 5%;
+			}
+			.wrap .top>a>img{
+				float: left;
+			}
+			.wrap .top{
+				padding-bottom: 0.4rem;
+			}
+			.wrap .top>p{
+				font-size: 0.36rem;
+				text-align: center;
+				font-weight: bold;
+			}
+			.wrap-con{
+				width: 100%;
+				text-align: center;
+				margin-top: 10%;
+				position: relative;
+				opacity: 0.5;
+			}
+			.wrap-con>img{
+				width: 30%;
+			}
+			.wrap-con .wrap-con-ready{
+				background-color: red;
+				width: 1.8rem;
+				height: 1.8rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 15%;
+				margin: auto;
+				border-radius: 50%;
+				background: rgba(0,0,0,1);
+			}
+			.wrap-con .wrap-con-ready img{
+				width: 90%;
+				display: inline-block;
+				margin-top: 40%;
+			}
+			.wrap-con p:nth-of-type(1){
+				font-size:0.3rem;
+				padding-bottom: 0.1rem;
+			}
+			.wrap-con p:nth-of-type(2){
+				font-size:0.36rem;
+				padding-bottom: 0.3rem;
+			}
+			.wrap-dis ul li{
+				font-size: 0.28rem;
+				color: #656565;
+			}
+			.wrap-dis{
+				width: 100%;
+				border: 1px solid #CCCCCC;
+				padding-bottom: 0.2rem;
+				border-radius: 0.1rem;
+			}
+			.wrap-dis ul{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				padding: 0.3rem 0 0 0;
+				flex-wrap: wrap;
+			}
+			.wrap-dis ul li{
+				width: 43%;
+				line-height: 0.7rem;
+				color: #656565;
+			}
+			.wrap-dis ul li:nth-of-type(2n){
+				text-align: right;
+			}
+			.wrap-dis ul li:nth-of-type(2){
+				color: #e1e1e1;
+			}
+			.wrap-can p{
+				color: #e1e1e1;
+				font-size: 0.22rem;
+				float: left;
+				padding: 0.2rem 0 0 0;
+			}
+			.wrap-can p:last-child{
+				float: right;
+			}
+			.wrap-can p:last-child:after{
+				content: "  IphoneX";
+				color: #f7be11;
+			}
+			.wrap-continue{
+				display: inline-block;
+				width: 99%;
+				background-color: #f8f8f8;
+				padding: 0.1rem;
+				
+			}
+			.wrap-continue p{
+				color: #a3a3a3;
+				font-size: 0.24rem;
+				float: left;
+			}
+
+			.wrap-text ul li p{
+				color: #656565;
+				font-size: 0.26rem;
+			}
+			.wrap-text ul li{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 0.3rem;
+			}
+			.wrap-text ul li p:nth-of-type(2){
+				position: relative;
+				width: 0.4rem;
+				height: 0.4rem;
+				background-color: #C0C0C0;	
+				border-radius: 0.1rem;
+			}
+			.wrap-text ul li p:nth-of-type(2) span{
+				content: "";
+				position: absolute;
+				width: 0.3rem;
+				height: 0.3rem;
+				background:url(img/home_pic_guajian1.png) no-repeat center/cover;
+				top: -0.1rem;
+				right: -0.1rem;			
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top"> 
+			    <a href="#" onClick="javascript :history.back(-1);"><img src="img/左箭头.png" ></a>
+				<p>我送出的</p>
+			</div>
+			<div class="wrap-con">
+				<img src="img/矢量智能对象.png" >
+				<div class="wrap-con-ready">
+					<img src="img/pic_yilingwan.png" >
+				</div>
+			   	<p>年会系列礼盒</p>
+				<p>祝大家新春快乐！</p>
+			</div>
+			<div class="wrap-dis">
+				<ul> 
+					<li>赠礼时间</li>
+					<li>2018-01-05 23:59</li>
+					<li>盒内礼品</li>
+					<li>99件</li>
+					<li>礼品价值</li>
+					<li>3200元</li>
+				</ul>
+			</div>
+			<div class="wrap-can">
+				<p>礼品可能升级为幸运礼品</p>
+				<p>本期幸运礼品:</p>
+			</div>
+			<div class="wrap-continue">
+				<p>已领取 3/3</p>
+				<!-- <p>未被领取完 <a href="##">继续发送</a></p> -->
+			</div>
+			<div class="wrap-text">
+				<ul>
+					<li>
+						<p>1</p>
+						<p><span></span></p>
+						<p>拉布丶</p>
+						<p>小米电动牙刷*1</p>
+						<p>价值1200元</p>
+					</li>
+					<li>
+						<p>2</p>
+						<p></p>
+						<p>拉布丶</p>
+						<p>小米电动牙刷*1</p>
+						<p>价值1200元</p>
+					</li>
+					<li>
+						<p>3</p>
+						<p></p>
+						<p>拉布丶</p>
+						<p>小米电动牙刷*1</p>
+						<p>价值1200元</p>
+					</li>
+					<li>
+						<p>4</p>
+						<p></p>
+						<p>拉布丶</p>
+						<p>小米电动牙刷*1</p>
+						<p>价值1200元</p>
+					</li>
+					<li>
+						<p>5</p>
+						<p></p>
+						<p>拉布丶</p>
+						<p>小米电动牙刷*1</p>
+						<p>价值1200元</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
