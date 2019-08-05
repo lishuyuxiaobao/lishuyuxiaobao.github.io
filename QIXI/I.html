@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>I</title>
+<meta http-equiv="imagetoolbar" content="no">
+<style type="text/css">
+	html {
+		overflow: hidden;
+	}
+	body {
+		background: #222;
+		width: 100%;
+		height: 100%;
+		cursor: crosshair;
+	}
+	.spanSlide {
+		position: absolute;
+		background: #000;
+		font-size: 1px;
+		overflow: hidden;
+	}
+	.imgSlide {
+		position: absolute;
+		left: 5%;
+		top: 5%;
+		width: 90%;
+		height: 90%;
+		overflow: hidden;
+	}
+	.txtSlide {
+		position: absolute;
+		top: 5%;
+		left: 50px;
+		width:100%;
+		color:#FFF;
+		font-family: arial, helvetica, verdana, sans-serif;
+		font-weight: bold;
+		font-size:96px;
+		letter-spacing:12px;
+		filter: alpha(opacity=70);
+		-moz-opacity:0.7;
+		opacity:0.7;
+	}
+	#asklz{
+		position: absolute;
+		width: 5.5em;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		color: pink;
+		font-size: 5em;
+		top: 10%;
+		/* background-color: red; */
+	}
+	#asklz2{
+		position: absolute;
+		width: 5.5em;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		color: darkviolet;
+		font-size: 5em;
+		bottom: -30%;
+	}
+	#asklz3{
+		position: absolute;
+		width: 0.8em;
+		color: #9400D3;
+		font-size: 10em;
+		top: 15%;
+		right: -40%;
+		word-wrap:break-word ;
+		/* background-color: red; */
+	}
+</style>
+
+<script type="text/javascript">
+
+var ym=0;
+var ny=0;
+
+createElement = function(container, type, param){
+	o=document.createElement(type);
+	for(var i in param)o[i]=param[i];
+	container.appendChild(o);
+	return o;
+}
+
+mooz = {
+	O:[],
+	/////////
+	mult:6,
+	nbI:5,
+	/////////
+	rwh:0,
+	imgsrc:0,
+	W:0,
+	H:0,
+
+	Xoom:function(N){
+		this.o = createElement(document.getElementById("screen"), "span", {
+			'className':'spanSlide'
+		});
+		img = createElement(this.o, "img", {
+			'className':"imgSlide",
+			'src':mooz.imgsrc[N%mooz.imgsrc.length].src
+		});
+		spa = createElement(this.o, "span", {
+			'className':"imgSlide"
+		});
+		txt = createElement(spa, "span", {
+			'className':"txtSlide",
+			'innerHTML':mooz.imgsrc[N%mooz.imgsrc.length].title
+		});
+		this.N = 10000+N;
+	},
+
+	mainloop:function(){
+		with(this){
+			for(i=0; i<mooz.nbI; i++) {
+				O[i].N += (ym-ny)/8000;
+				N = O[i].N%nbI;
+				ti = Math.pow(mult,N);
+				with(O[i].o.style){
+					left   = Math.round((W-(ti*rwh))/(W+ti)*(W*.5))+"px";
+					top    = Math.round((H-ti)/(H+ti)*(H*.5))+"px";
+					zIndex = Math.round(10000-ti*.1);
+					width  = Math.round(ti*rwh)+"px";
+					height = Math.round(ti)+"px";
+				}
+			}
+		}
+		setTimeout("mooz.mainloop();", 16);
+	},
+
+	oigres:function(){
+		with(this){
+			W = parseInt(document.getElementById("screen").style.width);
+			H = parseInt(document.getElementById("screen").style.height);
+			imgsrc = document.getElementById("images").getElementsByTagName("img");
+			rwh = imgsrc[0].width/imgsrc[0].height;
+			for(var i=0;i<nbI;i++) O[i] = new Xoom(i);
+			mainloop();
+		}
+	}
+}
+
+document.onmousemove = function(e){
+	if(window.event) e=window.event;
+	ym = (e.y || e.clientY);
+	if(ym/2>ny)ny=ym/2;
+}
+
+window.onload = function(){
+	ym = ny+50;
+	mooz.oigres();
+}
+
+</script>
+</head>
+
+<body>
+<div id="asklz">
+	
+</div>
+<div id="asklz3">
+	
+</div>
+<div style="position:absolute;top:50%;width: 100%;">
+	<div style="position:absolute;width:100%;height:1100px;top:-280px;background:#fff"></div>
+	<div style="position:absolute;left:-40px;top:-6px;color:#000;font-family:arial;font-size:0.9em">Loading...</div>
+	<div id="screen" style="position:absolute;width:100%;height:980px;top:-240px;overflow:hidden"></div>
+</div>
+<div id="asklz2">
+	
+</div>
+<div id="images" style="visibility:hidden">
+	<img title="丫头~猪猪" src="img/IMG_0814.JPG">
+	<img title="杨巧玲" src="img/IMG_0858.JPG">
+	<img title="爱" src="img/IMG_0860.JPG">
+	<img title="永远" src="img/IMG_0861.JPG"> 
+	<img title="李书宇" src="img/IMG_0862.JPG">
+</div>
+
+
+
+<script src="js/typewriter.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+				var app = document.getElementById('asklz');
+				var typewriter = new Typewriter(asklz, {
+					loop: true
+				});
+				typewriter.typeString('从月老开始').pauseFor(5000).deleteAll().start();
+					
+					
+				var app2 = document.getElementById('asklz2');
+				var typewriter2 = new Typewriter(asklz2, {
+					loop: true
+				});
+				typewriter2.typeString('到孟婆结束').pauseFor(5000).deleteAll().start();
+				
+				var app3 = document.getElementById('asklz3');
+				var typewriter3 = new Typewriter(asklz3, {
+					loop: true
+				});
+				typewriter3.pauseFor(2500).typeString('FOREVER').pauseFor(2500).deleteAll().start();
+	</script>
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/touch-0.2.14.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		touch.on(document, "touchstart", function(e) {
+			var event1 = window.event || e;
+			event1.preventDefault();
+		})
+				
+		touch.on(document, "swipeup", function() {
+			location.href = "LOVE.html"
+		})
+			touch.on(document, "swipedown", function() {
+				location.href = "homepage.html"
+			})	
+	</script>
+</body>
+</html>
